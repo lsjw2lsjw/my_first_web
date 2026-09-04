@@ -10,7 +10,7 @@ async function login(e) {
     const email = email_d.value.trim();
     const password = password_d.value.trim();
     try {
-        const response = await fetch("http://localhost:3000/login", {
+        const response = await fetch("/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
