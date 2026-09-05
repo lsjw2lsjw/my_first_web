@@ -34,7 +34,7 @@ async function login(e) {
             } if (password_err) {
                 err_handler(password_d);
             }
-            throw new Error("submission failed");
+            throw new Error("login 失败");
         } else if (response.status == 200){
             const redirect=result.redirect;
             window.location.href=redirect;

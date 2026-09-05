@@ -2,18 +2,33 @@
  * @Author: linziyi linziyi_nanjin@sina.com
  * @Date: 2026-09-02 23:44:14
  * @LastEditors: linziyi linziyi_nanjin@sina.com
- * @LastEditTime: 2026-09-02 23:45:00
+ * @LastEditTime: 2026-09-05 15:15:09
  * @FilePath: \node_4\public\p2.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
     <title>p2</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>welcome to p2</h1>
-</body>
+    <form id="form">
+      <label for="name">用户名</label>
+      <input id="name" name="theName" type="text" />
+      <label for="avatar">头像(接受png、jpeg、pdf)</label>
+      <input
+        id="avatar"
+        name="upload"
+        type="file"
+        accept="image/png,image/jpeg,application/pdf"
+      />
+      <button type="submit">上传</button>
+    </form>
+    <script src="/p2.js" type="module"></script>
+  </body>
 </html>
